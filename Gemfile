@@ -4,7 +4,6 @@ require 'json'
 require 'open-uri'
 
 # gem 'jekyll'
-gem 'kickster'
 gem 'streamio-ffmpeg'
 gem 'pry'
 versions = JSON.parse(open('https://pages.github.com/versions.json').read)

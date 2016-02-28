@@ -4,7 +4,7 @@
     <title>Подкаст из провинции</title>
     <link>http://cityhawk.ru</link>
     <atom:link href="http://cityhawk.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>2016-02-27 23:55:04 -0500</lastBuildDate>
+    <lastBuildDate>2016-02-28 00:31:14 -0500</lastBuildDate>
     <language>ru</language>
 
     <itunes:summary>Это такой аудиодневник или, можно сказать, колыбельная для друзей. Впрочем, заходите на огонек
@@ -25,9 +25,8 @@
       <url>http://cityhawk.ru/pip_cover.jpg</url>
       <link>http://cityhawk.ru</link>
     </image>
-    
-    <itunes:category text="Personal Journals">
-    
+    <itunes:category text="Society & Culture">
+        <itunes:category text="Personal Journals"/>
     </itunes:category>
     
     <item>

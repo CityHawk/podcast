@@ -4,7 +4,7 @@
     <title>Подкаст из провинции</title>
     <link>http://cityhawk.ru</link>
     <atom:link href="http://cityhawk.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>2016-02-28 00:31:14 -0500</lastBuildDate>
+    <lastBuildDate>2016-02-28 00:48:53 -0500</lastBuildDate>
     <language>ru</language>
 
     <itunes:summary>Это такой аудиодневник или, можно сказать, колыбельная для друзей. Впрочем, заходите на огонек
@@ -25,15 +25,15 @@
       <url>http://cityhawk.ru/pip_cover.jpg</url>
       <link>http://cityhawk.ru</link>
     </image>
-    <itunes:category text="Society & Culture">
-        <itunes:category text="Personal Journals"/>
+    <itunes:category text='Society &amp; Culture'>
+        <itunes:category text="Personal Journals" />
     </itunes:category>
     
     <item>
       <title>Подкаст из провинции №29</title>
       <link>http://blog.cityhawk.ru/2014/01/pip29.html</link>
       <comments>http://blog.cityhawk.ru/2014/01/pip29.html</comments>
-      <pubDate>2014-01-01 00:00:00 -0500</pubDate>
+      <pubDate>D, d M Y H:i:s T</pubDate>
       
       <guid isPermaLink="false">http://blog.cityhawk.ru/2014/01/pip29.html</guid>
       <description><![CDATA[<p>Переезд в Калифорнию</p>
@@ -89,7 +89,7 @@ PROFIT
       <title>Подкаст из провинции №28</title>
       <link>http://blog.cityhawk.ru/2013/10/pip28.html</link>
       <comments>http://blog.cityhawk.ru/2013/10/pip28.html</comments>
-      <pubDate>2013-10-31 00:00:00 -0400</pubDate>
+      <pubDate>D, d M Y H:i:s T</pubDate>
       
       <guid isPermaLink="false">http://blog.cityhawk.ru/2013/10/pip28.html</guid>
       <description><![CDATA[<p>Позитивные изменения на работе</p>
@@ -139,7 +139,7 @@ PROFIT
       <title>Подкаст из провинции №27</title>
       <link>http://blog.cityhawk.ru/2013/10/pip27.html</link>
       <comments>http://blog.cityhawk.ru/2013/10/pip27.html</comments>
-      <pubDate>2013-10-23 00:00:00 -0400</pubDate>
+      <pubDate>D, d M Y H:i:s T</pubDate>
       
       <guid isPermaLink="false">http://blog.cityhawk.ru/2013/10/pip27.html</guid>
       <description><![CDATA[<p>Переехал в корпоративную квартиру</p>
@@ -180,7 +180,7 @@ PROFIT
       <title>Подкаст из провинции №26</title>
       <link>http://blog.cityhawk.ru/2013/10/pip26.html</link>
       <comments>http://blog.cityhawk.ru/2013/10/pip26.html</comments>
-      <pubDate>2013-10-17 00:00:00 -0400</pubDate>
+      <pubDate>D, d M Y H:i:s T</pubDate>
       
       <guid isPermaLink="false">http://blog.cityhawk.ru/2013/10/pip26.html</guid>
       <description><![CDATA[<p>Полет в Калифорнию</p>
@@ -221,7 +221,7 @@ PROFIT
       <title>Подкаст из провинции №25</title>
       <link>http://blog.cityhawk.ru/2013/10/pip25.html</link>
       <comments>http://blog.cityhawk.ru/2013/10/pip25.html</comments>
-      <pubDate>2013-10-05 00:00:00 -0400</pubDate>
+      <pubDate>D, d M Y H:i:s T</pubDate>
       
       <guid isPermaLink="false">http://blog.cityhawk.ru/2013/10/pip25.html</guid>
       <description><![CDATA[<p>Небольшой анонс изменений</p>
@@ -274,7 +274,7 @@ Hydro Floss
       <title>Подкаст из провинции №24</title>
       <link>http://blog.cityhawk.ru/2013/09/pip24.html</link>
       <comments>http://blog.cityhawk.ru/2013/09/pip24.html</comments>
-      <pubDate>2013-09-26 00:00:00 -0400</pubDate>
+      <pubDate>D, d M Y H:i:s T</pubDate>
       
       <guid isPermaLink="false">http://blog.cityhawk.ru/2013/09/pip24.html</guid>
       <description><![CDATA[<p>Неудачный аквапарк</p>
@@ -325,7 +325,7 @@ Hydro Floss
       <title>Подкаст из провинции №23</title>
       <link>http://blog.cityhawk.ru/2013/09/pip23.html</link>
       <comments>http://blog.cityhawk.ru/2013/09/pip23.html</comments>
-      <pubDate>2013-09-16 00:00:00 -0400</pubDate>
+      <pubDate>D, d M Y H:i:s T</pubDate>
       
       <guid isPermaLink="false">http://blog.cityhawk.ru/2013/09/pip23.html</guid>
       <description><![CDATA[<p>Дом пошел с молотка</p>
@@ -358,7 +358,7 @@ Hydro Floss
       <title>Подкаст из провинции №22</title>
       <link>http://blog.cityhawk.ru/2013/09/pip22.html</link>
       <comments>http://blog.cityhawk.ru/2013/09/pip22.html</comments>
-      <pubDate>2013-09-09 00:00:00 -0400</pubDate>
+      <pubDate>D, d M Y H:i:s T</pubDate>
       
       <guid isPermaLink="false">http://blog.cityhawk.ru/2013/09/pip22.html</guid>
       <description><![CDATA[<p>Экстремальные выходные</p>
@@ -403,7 +403,7 @@ Hydro Floss
       <title>Подкаст из провинции №21</title>
       <link>http://blog.cityhawk.ru/2013/09/pip21.html</link>
       <comments>http://blog.cityhawk.ru/2013/09/pip21.html</comments>
-      <pubDate>2013-09-03 00:00:00 -0400</pubDate>
+      <pubDate>D, d M Y H:i:s T</pubDate>
       
       <guid isPermaLink="false">http://blog.cityhawk.ru/2013/09/pip21.html</guid>
       <description><![CDATA[<p>Кофейные эксперименты</p>
@@ -442,7 +442,7 @@ Hydro Floss
       <title>Подкаст из провинции №20</title>
       <link>http://blog.cityhawk.ru/2013/08/pip20.html</link>
       <comments>http://blog.cityhawk.ru/2013/08/pip20.html</comments>
-      <pubDate>2013-08-23 00:00:00 -0400</pubDate>
+      <pubDate>D, d M Y H:i:s T</pubDate>
       
       <guid isPermaLink="false">http://blog.cityhawk.ru/2013/08/pip20.html</guid>
       <description><![CDATA[<p>Немного кошечек, белочек и прочие няшечек</p>
@@ -481,7 +481,7 @@ Hydro Floss
       <title>Подкаст из провинции №19</title>
       <link>http://blog.cityhawk.ru/2013/08/pip19.html</link>
       <comments>http://blog.cityhawk.ru/2013/08/pip19.html</comments>
-      <pubDate>2013-08-15 00:00:00 -0400</pubDate>
+      <pubDate>D, d M Y H:i:s T</pubDate>
       
       <guid isPermaLink="false">http://blog.cityhawk.ru/2013/08/pip19.html</guid>
       <description><![CDATA[<p>Нападение экологов-бандитов</p>
@@ -520,7 +520,7 @@ Hydro Floss
       <title>Подкаст из провинции №18</title>
       <link>http://blog.cityhawk.ru/2013/08/pip18.html</link>
       <comments>http://blog.cityhawk.ru/2013/08/pip18.html</comments>
-      <pubDate>2013-08-08 00:00:00 -0400</pubDate>
+      <pubDate>D, d M Y H:i:s T</pubDate>
       
       <guid isPermaLink="false">http://blog.cityhawk.ru/2013/08/pip18.html</guid>
       <description><![CDATA[<p>Почтовые хлопоты</p>
@@ -553,7 +553,7 @@ Hydro Floss
       <title>Подкаст из провинции №17</title>
       <link>http://blog.cityhawk.ru/2013/08/pip17.html</link>
       <comments>http://blog.cityhawk.ru/2013/08/pip17.html</comments>
-      <pubDate>2013-08-02 00:00:00 -0400</pubDate>
+      <pubDate>D, d M Y H:i:s T</pubDate>
       
       <guid isPermaLink="false">http://blog.cityhawk.ru/2013/08/pip17.html</guid>
       <description><![CDATA[<p>Перезапускаемся</p>

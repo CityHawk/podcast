@@ -4,7 +4,7 @@
     <title>Подкаст из провинции</title>
     <link>http://cityhawk.ru</link>
     <atom:link href="http://cityhawk.github.io/podcast/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>2016-02-28 15:31:18 -0500</lastBuildDate>
+    <lastBuildDate>2016-03-28 20:20:57 -0400</lastBuildDate>
     <language>ru</language>
 
     <itunes:summary>Это такой аудиодневник или, можно сказать, колыбельная для друзей. Впрочем, заходите на огонек
@@ -28,6 +28,36 @@
     <itunes:category text='Society &amp; Culture'>
         <itunes:category text="Personal Journals" />
     </itunes:category>
+    
+    <item>
+      <title>Подкаст из провинции №31</title>
+      <link>http://blog.cityhawk.ru/2016/03/pip31.html</link>
+      <comments>http://blog.cityhawk.ru/2016/03/pip31.html</comments>
+      <pubDate>Mon, 28 Mar 2016 00:00:00 -0400</pubDate>
+      
+      <guid isPermaLink="false">http://blog.cityhawk.ru/2016/03/pip31.html</guid>
+      <description><![CDATA[<p>Тяжелая судьба предыдущего выпуска
+Синдром кока-колы в магазине
+Бесплатные дворники
+Сколько стоит лояльность</p>
+ В подкаcте иcпользована музыка из композиции "The League — F* RNR" (http://www.jamendo.com/ru/track/319979) распространяющаяся по лицензии Creative Commons Attribution 3.0 Unported, получена на сайте http://jamendo.com
+
+]]></description>
+      <enclosure url="http://cityhawk.ru/pip31.mp3" length="16003866" type="audio/mpeg" />
+      <itunes:subtitle>Тяжелая судьба предыдущего выпуска
+Синдром кока-колы в магазине
+Бесплатные дворники
+Сколько стоит лояльность</itunes:subtitle>
+      <itunes:summary><![CDATA[ Тяжелая судьба предыдущего выпуска
+Синдром кока-колы в магазине
+Бесплатные дворники
+Сколько стоит лояльность В подкаcте иcпользована музыка из композиции "The League — F* RNR" (http://www.jamendo.com/ru/track/319979) распространяющаяся по лицензии Creative Commons Attribution 3.0 Unported, получена на сайте http://jamendo.com
+
+]]></itunes:summary>
+      <itunes:author>Eugene Suchkov</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:22:13</itunes:duration>
+    </item>
     
     <item>
       <title>Подкаст из провинции №30</title>

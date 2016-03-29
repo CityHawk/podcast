@@ -4,7 +4,7 @@
     <title>Подкаст из провинции</title>
     <link>http://cityhawk.ru</link>
     <atom:link href="http://cityhawk.github.io/podcast/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>2016-03-28 20:20:57 -0400</lastBuildDate>
+    <lastBuildDate>2016-03-28 20:39:46 -0400</lastBuildDate>
     <language>ru</language>
 
     <itunes:summary>Это такой аудиодневник или, можно сказать, колыбельная для друзей. Впрочем, заходите на огонек
@@ -36,21 +36,30 @@
       <pubDate>Mon, 28 Mar 2016 00:00:00 -0400</pubDate>
       
       <guid isPermaLink="false">http://blog.cityhawk.ru/2016/03/pip31.html</guid>
-      <description><![CDATA[<p>Тяжелая судьба предыдущего выпуска
-Синдром кока-колы в магазине
-Бесплатные дворники
-Сколько стоит лояльность</p>
+      <description><![CDATA[<p>Тяжелая судьба предыдущего выпуска</p>
+
+<p>Синдром кока-колы в магазине</p>
+
+<p>Бесплатные дворники</p>
+
+<p>Сколько стоит лояльность</p>
  В подкаcте иcпользована музыка из композиции "The League — F* RNR" (http://www.jamendo.com/ru/track/319979) распространяющаяся по лицензии Creative Commons Attribution 3.0 Unported, получена на сайте http://jamendo.com
 
 ]]></description>
-      <enclosure url="http://cityhawk.ru/pip31.mp3" length="16003866" type="audio/mpeg" />
+      <enclosure url="http://cityhawk.ru/pip31.mp3" length="16005375" type="audio/mpeg" />
       <itunes:subtitle>Тяжелая судьба предыдущего выпуска
+
 Синдром кока-колы в магазине
+
 Бесплатные дворники
+
 Сколько стоит лояльность</itunes:subtitle>
       <itunes:summary><![CDATA[ Тяжелая судьба предыдущего выпуска
+
 Синдром кока-колы в магазине
+
 Бесплатные дворники
+
 Сколько стоит лояльность В подкаcте иcпользована музыка из композиции "The League — F* RNR" (http://www.jamendo.com/ru/track/319979) распространяющаяся по лицензии Creative Commons Attribution 3.0 Unported, получена на сайте http://jamendo.com
 
 ]]></itunes:summary>

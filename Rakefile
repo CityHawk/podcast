@@ -3,7 +3,9 @@ require 'rake'
 require 'yaml'
 require 'fileutils'
 require 'rbconfig'
-require 'net/ftp'
+require 'front_matter_parser'
+# require 'mp3info'
+require 'taglib'
 
 # == Configuration =============================================================
 
@@ -226,13 +228,30 @@ task :transfer do
   end
 end
 
-# rake ftpup
-desc 'Transfer feed.xml to the ftp'
-task :ftpup do
-    ftpconf = YAML.load(File.open('.ftpconfig.yaml').read)
-    ftp = Net::FTP.new(ftpconf['server'], ftpconf['login'], ftpconf['password'])
-    # ftp.login
-    ftp.put('_site/feed.xml')
-    ftp.close
+desc 'populates id3 tags'
+task :populate, :fmyfile do |t, args|
+    parsed = FrontMatterParser.parse_file(args[:fmyfile])
+    # open id3 tag
 
+    frame_factory = TagLib::ID3v2::FrameFactory.instance
+    frame_factory.default_text_encoding = TagLib::String::UTF8
+
+    TagLib::MPEG::File.open("episodes/#{parsed.front_matter['audio']}") do |fileref|
+        tag = fileref.id3v2_tag
+        puts tag.title
+        puts tag.artist
+        puts tag.album
+        puts tag.comment
+        tag.title = parsed.front_matter['title']
+        tag.artist = parsed.front_matter['author']
+        tag.album = 'Подкаст из провинции'
+        tag.comment = parsed.content
+        fileref.save
+    end  # File is automatically closed at block
 end
+
+desc 's3upload'
+task :s3up, :fmyfile do |t, args|
+    parsed = FrontMatterParser.parse_file(args[:fmyfile])
+end
+

@@ -4,7 +4,7 @@
     <title>Подкаст из провинции</title>
     <link>http://cityhawk.ru</link>
     <atom:link href="http://cityhawk.github.io/podcast/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>2016-03-28 20:39:46 -0400</lastBuildDate>
+    <lastBuildDate>2016-04-19 17:34:46 -0400</lastBuildDate>
     <language>ru</language>
 
     <itunes:summary>Это такой аудиодневник или, можно сказать, колыбельная для друзей. Впрочем, заходите на огонек
@@ -28,6 +28,39 @@
     <itunes:category text='Society &amp; Culture'>
         <itunes:category text="Personal Journals" />
     </itunes:category>
+    
+    <item>
+      <title>Подкаст из провинции №32</title>
+      <link>http://blog.cityhawk.ru/2016/04/pip32.html</link>
+      <comments>http://blog.cityhawk.ru/2016/04/pip32.html</comments>
+      <pubDate>Tue, 19 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid isPermaLink="false">http://blog.cityhawk.ru/2016/04/pip32.html</guid>
+      <description><![CDATA[<p>Поездка в Вашингтон</p>
+
+<p>Тяжелая судьба вейпинга</p>
+
+<p>Смерть классической розницы</p>
+ В подкаcте иcпользована музыка из композиции "The League — F* RNR" (http://www.jamendo.com/ru/track/319979) распространяющаяся по лицензии Creative Commons Attribution 3.0 Unported, получена на сайте http://jamendo.com
+
+]]></description>
+      <enclosure url="http://cityhawk.ru/pip32.mp3" length="14167331" type="audio/mpeg" />
+      <itunes:subtitle>Поездка в Вашингтон
+
+Тяжелая судьба вейпинга
+
+Смерть классической розницы</itunes:subtitle>
+      <itunes:summary><![CDATA[ Поездка в Вашингтон
+
+Тяжелая судьба вейпинга
+
+Смерть классической розницы В подкаcте иcпользована музыка из композиции "The League — F* RNR" (http://www.jamendo.com/ru/track/319979) распространяющаяся по лицензии Creative Commons Attribution 3.0 Unported, получена на сайте http://jamendo.com
+
+]]></itunes:summary>
+      <itunes:author>Eugene Suchkov</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:14:45</itunes:duration>
+    </item>
     
     <item>
       <title>Подкаст из провинции №31</title>

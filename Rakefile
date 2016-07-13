@@ -6,6 +6,8 @@ require 'rbconfig'
 require 'front_matter_parser'
 # require 'mp3info'
 require 'taglib'
+require 'aws-sdk'
+
 
 # == Configuration =============================================================
 
@@ -98,79 +100,10 @@ task :post, :title do |t, args|
   create_file(POSTS, filename, content, title, editor)
 end
 
-# rake draft["Title"]
-desc "Create a post in _drafts"
-task :draft, :title do |t, args|
-  title = args[:title]
-  template = CONFIG["post"]["template"]
-  extension = CONFIG["post"]["extension"]
-  editor = CONFIG["editor"]
-  check_title(title)
-  filename = transform_to_slug(title, extension)
-  content = read_file(template)
-  create_file(DRAFTS, filename, content, title, editor)
-end
-
-# rake publish
-desc "Move a post from _drafts to _posts"
-task :publish do
-  extension = CONFIG["post"]["extension"]
-  files = Dir["#{DRAFTS}/*.#{extension}"]
-  files.each_with_index do |file, index|
-    puts "#{index + 1}: #{file}".sub("#{DRAFTS}/", "")
-  end
-  print "> "
-  number = $stdin.gets
-  if number =~ /\D/
-    filename = files[number.to_i - 1].sub("#{DRAFTS}/", "")
-    FileUtils.mv("#{DRAFTS}/#{filename}", "#{POSTS}/#{DATE}-#{filename}")
-    puts "#{filename} was moved to '#{POSTS}'."
-  else
-    puts "Please choose a draft by the assigned number."
-  end
-end
-
-# rake page["Title"]
-# rake page["Title","Path/to/folder"]
-desc "Create a page (optional filepath)"
-task :page, :title, :path do |t, args|
-  title = args[:title]
-  template = CONFIG["page"]["template"]
-  extension = CONFIG["page"]["extension"]
-  editor = CONFIG["editor"]
-  directory = args[:path]
-  if directory.nil? or directory.empty?
-    directory = "./"
-  else
-    FileUtils.mkdir_p("#{directory}")
-  end
-  check_title(title)
-  filename = transform_to_slug(title, extension)
-  content = read_file(template)
-  create_file(directory, filename, content, title, editor)
-end
-
 # rake build
 desc "Build the site"
 task :build do
   execute("jekyll build")
-end
-
-# rake watch
-# rake watch[number]
-# rake watch["drafts"]
-desc "Serve and watch the site (with post limit or drafts)"
-task :watch, :option do |t, args|
-  option = args[:option]
-  if option.nil? or option.empty?
-    execute("jekyll serve --watch")
-  else
-    if option == "drafts"
-      execute("jekyll serve --watch --drafts")
-    else
-      execute("jekyll serve --watch --limit_posts #{option}")
-    end
-  end
 end
 
 # rake preview
@@ -188,45 +121,6 @@ task :preview do
   Rake::Task[:watch].invoke
 end
 
-# rake deploy["Commit message"]
-desc "Deploy the site to a remote git repo"
-task :deploy, :message do |t, args|
-  message = args[:message]
-  branch = CONFIG["git"]["branch"]
-  if message.nil? or message.empty?
-    raise "Please add a commit message."
-  end
-  if branch.nil? or branch.empty?
-    raise "Please add a branch."
-  else
-    Rake::Task[:build].invoke
-    execute("git add .")
-    execute("git commit -m \"#{message}\"")
-    execute("git push origin #{branch}")
-  end
-end
-
-# rake transfer
-desc "Transfer the site (remote server or a local git repo)"
-task :transfer do
-  command = CONFIG["transfer"]["command"]
-  source = CONFIG["transfer"]["source"]
-  destination = CONFIG["transfer"]["destination"]
-  settings = CONFIG["transfer"]["settings"]
-  if command.nil? or command.empty?
-    raise "Please choose a file transfer command."
-  elsif command == "robocopy"
-    Rake::Task[:build].invoke
-    execute("robocopy #{source} #{destination} #{settings}")
-    puts "Your site was transfered."
-  elsif command == "rsync"
-    Rake::Task[:build].invoke
-    execute("rsync #{settings} #{source} #{destination}")
-    puts "Your site was transfered."
-  else
-    raise "#{command} isn't a valid file transfer command."
-  end
-end
 
 desc 'populates id3 tags'
 task :populate, :fmyfile do |t, args|
@@ -251,7 +145,17 @@ task :populate, :fmyfile do |t, args|
 end
 
 desc 's3upload'
-task :s3up, :fmyfile do |t, args|
-    parsed = FrontMatterParser.parse_file(args[:fmyfile])
+task :s3up, :fmyfile do |_t, args|
+  Rake::Task["build"].invoke
+  parsed = FrontMatterParser.parse_file(args[:fmyfile])
+  puts "Going to upload _site/episodes/#{parsed.front_matter['audio']}"
+  s3 = Aws::S3::Resource.new(region:'eu-west-1')
+  # obj = s3.bucket('cityhawk.ru').object(key: parsed.front_matter['audio'].to_s)
+  obj = s3.bucket('cityhawk.ru').object(parsed.front_matter['audio'].to_s)
+  obj.upload_file("_site/episodes/#{parsed.front_matter['audio']}", {acl: 'public-read'})
+
+  obj = s3.bucket('cityhawk.ru').object('feed.xml')
+  obj.upload_file("_site/feed.xml", {acl: 'public-read'})
 end
+
 
